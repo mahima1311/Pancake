@@ -34,7 +34,7 @@ pancake_css = """
     margin: 30px auto;
     transform: perspective(300px) rotateX(40deg) skewX(-10deg);
     transform-origin: center;
-    z-index: 4;
+    z-index: 1001;
     border-radius: 5px;
     filter: drop-shadow(0px 5px 5px #FFD700);
 }
