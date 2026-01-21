@@ -50,7 +50,7 @@ st.markdown('<div class="butter"></div>', unsafe_allow_html=True)
 for i in range(num_pancakes):
      st.markdown(f'<div class="pancake" style="top: {i * 20}px;"></div>', unsafe_allow_html=True)
 
-
+st.markdown('</div>', unsafe_allow_html=True)
 
 #st.markdown("""
 #<div class="parent-container">
