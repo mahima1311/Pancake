@@ -19,7 +19,7 @@ pancake_css = """
     width: 200px;
     height: 100px;
     margin: 10px auto;
-    z-index: 3;
+    z-index: 1000;
     border: 5px outset #8B4513; /* Darker edge */
     box-shadow: 0px 5px 5px rgba(139, 69, 19, 1);
     filter: drop-shadow(0px 5px 5px rgba(139, 69, 19, 1));
@@ -48,7 +48,7 @@ num_pancakes = st.slider("Stack Size", 1, 1000, 3)
 st.markdown('<div class="parent-container">', unsafe_allow_html=True)
 st.markdown('<div class="butter"></div>', unsafe_allow_html=True)
 for i in range(num_pancakes):
-     st.markdown(f'<div class="pancake" style="top: {i * 20}px;"></div>', unsafe_allow_html=True)
+     st.markdown(f'<div class="pancake" style="top: {i * 20}px; z-index: {1000-i};"></div>', unsafe_allow_html=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
 
