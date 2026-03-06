@@ -1,4 +1,17 @@
 import streamlit as st
+import os
+
+# Define the path to your zip file
+zip_file_path = os.path.join("data", "First Law World.zip") 
+
+# Open the file in binary read mode
+with open(zip_file_path, "rb") as fp:
+    st.download_button(
+        label="Download First Law World",
+        data=fp,
+        file_name="First Law World.zip", # Name the file the user will download
+        mime="application/zip" # Set the MIME type
+    )
 
 st.title("Pancakes Developed")
 
